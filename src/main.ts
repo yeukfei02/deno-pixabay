@@ -1,8 +1,8 @@
 export async function searchImage(
   apiKey: string,
   query: string,
-  page: number | null,
-  perPage: number | null,
+  page?: number,
+  perPage?: number,
 ) {
   let result = null;
 
@@ -39,8 +39,8 @@ export async function searchImage(
 export async function searchVideo(
   apiKey: string,
   query: string,
-  page: number | null,
-  perPage: number | null,
+  page?: number,
+  perPage?: number,
 ) {
   let result = null;
 
