@@ -5,8 +5,6 @@ Deno.test("searchImage", async () => {
   const result = await searchImage(
     "15753767-8bbb44885683e7d79aa1c14c1",
     "dog",
-    null,
-    null,
   );
   assert(result);
 });
@@ -25,8 +23,6 @@ Deno.test("searchVideo", async () => {
   const result = await searchVideo(
     "15753767-8bbb44885683e7d79aa1c14c1",
     "dog",
-    null,
-    null,
   );
   assert(result);
 });
