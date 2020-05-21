@@ -65,7 +65,7 @@ export async function searchVideo(
   const queryString = new URLSearchParams(params).toString();
 
   const response = await fetch(
-    `https://pixabay.com/api?${queryString}`,
+    `https://pixabay.com/api/videos?${queryString}`,
   );
   if (response) {
     result = response.json();
