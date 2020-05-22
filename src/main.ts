@@ -1,30 +1,10 @@
-export async function searchImage(
-  apiKey: string,
-  query: string,
-  page?: number,
-  perPage?: number,
-) {
+export async function searchImage(params: any) {
   let result = null;
 
-  let params = {
-    key: apiKey,
-    q: query,
-    page: "1",
-    per_page: "20",
-  };
-  if (page) {
-    let obj = {
-      page: page,
-    };
-    params = Object.assign(params, obj);
+  let queryString = "";
+  if (params) {
+    queryString = new URLSearchParams(params).toString();
   }
-  if (perPage) {
-    let obj = {
-      per_page: perPage,
-    };
-    params = Object.assign(params, obj);
-  }
-  const queryString = new URLSearchParams(params).toString();
 
   const response = await fetch(
     `https://pixabay.com/api?${queryString}`,
@@ -36,33 +16,13 @@ export async function searchImage(
   return result;
 }
 
-export async function searchVideo(
-  apiKey: string,
-  query: string,
-  page?: number,
-  perPage?: number,
-) {
+export async function searchVideo(params: any) {
   let result = null;
 
-  let params = {
-    key: apiKey,
-    q: query,
-    page: "1",
-    per_page: "20",
-  };
-  if (page) {
-    let obj = {
-      page: page,
-    };
-    params = Object.assign(params, obj);
+  let queryString = "";
+  if (params) {
+    queryString = new URLSearchParams(params).toString();
   }
-  if (perPage) {
-    let obj = {
-      per_page: perPage,
-    };
-    params = Object.assign(params, obj);
-  }
-  const queryString = new URLSearchParams(params).toString();
 
   const response = await fetch(
     `https://pixabay.com/api/videos?${queryString}`,
