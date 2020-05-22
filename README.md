@@ -15,11 +15,20 @@ import { searchImage, searchVideo } from "https://denopkg.com/yeukfei02/deno-pix
 ## searchImage
 
 ```ts
-const image = await searchImage(API_KEY: string, query: string);
-console.log("image = ", image);
+const params = {
+  key: "apiKey",
+  q: "dog",
+};
 
-// page and perPage are optional, default page = 1, perPage = 20
-const image = await searchImage(API_KEY: string, query: string, page: int, perPage: int);
+// page and perPage are optional, default page = 1, per_page = 20
+const params = {
+  key: "apiKey",
+  q: "dog",
+  page: 1,
+  per_page: 3
+};
+
+const image = await searchImage(params);
 
 // image
 {
@@ -58,11 +67,20 @@ const image = await searchImage(API_KEY: string, query: string, page: int, perPa
 ## searchVideo
 
 ```ts
-const video = await searchVideo(API_KEY: string, query: string);
-console.log("video = ", video);
+const params = {
+  key: "apiKey",
+  q: "dog",
+};
 
-// page and perPage are optional, default page = 1, perPage = 20
-const video = await searchVideo(API_KEY: string, query: string, page: int, perPage: int);
+// page and perPage are optional, default page = 1, per_page = 20
+const params = {
+  key: "apiKey",
+  q: "dog",
+  page: 1,
+  per_page: 3
+};
+
+const video = await searchVideo(params);
 
 // video
 {
