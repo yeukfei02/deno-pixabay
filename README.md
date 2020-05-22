@@ -1,6 +1,6 @@
 # deno-pixabay
 
-https://deno.land/x/deno_pixabay
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/deno_pixabay/mod.ts)
 
 search image and video from pixabay in deno
 
