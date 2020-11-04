@@ -4,7 +4,7 @@
     "entry": "./mod.ts",
     "description": "search image and video from pixabay in deno",
     "homepage": "https://github.com/yeukfei02/deno-pixabay",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "files": [
       "*",
       "*/**/*"
