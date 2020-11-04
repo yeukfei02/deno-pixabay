@@ -15,7 +15,7 @@ import {
 import {
   searchImage,
   searchVideo,
-} from "https://deno.land/x/deno-pixabay@0.1.7/mod.ts";
+} from "https://x.nest.land/deno-pixabay@0.1.7/mod.ts";
 import {
   searchImage,
   searchVideo,
