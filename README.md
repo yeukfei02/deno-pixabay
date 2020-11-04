@@ -2,14 +2,24 @@
 
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/deno_pixabay/mod.ts)
 
+[![nest badge](https://nest.land/badge.svg)](https://nest.land/package/deno-pixabay)
+
 search image and video from pixabay in deno
 
 ```ts
-import { searchImage, searchVideo } from "https://deno.land/x/deno_pixabay/mod.ts";
-
-or
-
-import { searchImage, searchVideo } from "https://denopkg.com/yeukfei02/deno-pixabay/mod.ts";
+// pick 1 to import
+import {
+  searchImage,
+  searchVideo,
+} from "https://deno.land/x/deno_pixabay/mod.ts";
+import {
+  searchImage,
+  searchVideo,
+} from "https://deno.land/x/deno-pixabay@0.1.7/mod.ts";
+import {
+  searchImage,
+  searchVideo,
+} from "https://denopkg.com/yeukfei02/deno-pixabay/mod.ts";
 ```
 
 ## searchImage
